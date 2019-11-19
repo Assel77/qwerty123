@@ -354,7 +354,17 @@ int main(){
 	cout<<x<<endl;
 	return 0;
 }
-32)
+32)#include <iostream>
+using namespace std;
+int main()
+{
+ int n= 237;
+ int c = 237 / 100;
+ int d = 237 % 100;
+ int x = (d * 10) + c;
+ cout << x;
+ return 0;
+}
 33)#include <iostream>
 #include <cmath>
 using namespace std;
@@ -590,8 +600,49 @@ int main(){
 	}
 	return 0;
 }
-48)
-49)
+48)#include <iostream>
+using namespace std;
+int main()
+{
+ int x, y, z;
+ int m = 0;
+ cin >> x >> y >> z;
+ if (x > y &&  z> y) {
+  m= x+z;
+ }
+ else if (y > x && z> x) {
+  m = y+z;
+ }
+ else if (x > z && y > z) {
+  m= x+y;
+ }
+ cout << m;
+ return 0;
+}
+49)#include <iostream>
+using namespace std;
+int main()
+{
+ int a[4];
+ int m = 0;
+ bool s = false;
+ for (int i = 0; i < 4; i++) {
+  cin >> a[i];
+  if (a[i] % 2 == 0) {
+   if (a[i] > m) {
+    m = a[i];
+    s = true;
+   }
+  }
+ }if (s == true) {
+  cout << m;
+ }
+ else {
+  cout << "not found";
+ }
+ 
+ return 0;
+}
 50)#include <iostream>
 #include <cmath>
 using namespace std;
